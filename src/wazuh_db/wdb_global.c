@@ -37,14 +37,6 @@ static const char *global_db_agent_fields[] = {
     NULL
 };
 
-typedef enum wdb_stmt_global {
-    WDB_STMT_GLOBAL_CHECK_MANAGER_KEEPALIVE,
-} wdb_stmt_metadata;
-
-static const char *SQL_GLOBAL_STMT[] = {
-    "SELECT COUNT(*) FROM agent WHERE id=0 AND last_keepalive=253402300799;",
-};
-
 int wdb_global_insert_agent(wdb_t *wdb, int id, char* name, char* ip, char* register_ip, char* internal_key, char* group, int date_add) {
     sqlite3_stmt *stmt = NULL;
 
@@ -1182,35 +1174,6 @@ int wdb_global_reset_agents_connection(wdb_t *wdb, const char *sync_status) {
         mdebug1("SQLite: %s", sqlite3_errmsg(wdb->db));
         return OS_INVALID;
     }
-}
-
-// Check the presence of manager's keepalive in the global database
-int wdb_global_check_manager_keepalive(wdb_t *wdb) {
-    sqlite3_stmt *stmt = NULL;
-    int result = -1;
-
-    if (sqlite3_prepare_v2(wdb->db,
-                           SQL_GLOBAL_STMT[WDB_STMT_GLOBAL_CHECK_MANAGER_KEEPALIVE],
-                           -1,
-                           &stmt,
-                           NULL) != SQLITE_OK) {
-        merror("DB(%s) sqlite3_prepare_v2(): %s", wdb->id, sqlite3_errmsg(wdb->db));
-        return OS_INVALID;
-    }
-
-    switch (sqlite3_step(stmt)) {
-    case SQLITE_ROW:
-        result = sqlite3_column_int(stmt, 0);
-        break;
-    case SQLITE_DONE:
-        result = OS_SUCCESS;
-        break;
-    default:
-        result = OS_INVALID;
-    }
-
-    sqlite3_finalize(stmt);
-    return result;
 }
 
 cJSON* wdb_global_get_agents_by_connection_status (wdb_t *wdb, int last_agent_id, const char* connection_status, wdbc_result* status) {

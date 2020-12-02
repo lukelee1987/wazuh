@@ -611,12 +611,7 @@ void test_fim_link_update(void **state) {
     int pos = 0;
     char *link_path = "/folder/test";
 
-    expect_value(__wrap_fim_db_get_path_range, fim_sql, syscheck.database);
-    expect_string(__wrap_fim_db_get_path_range, start, "/boot/");
-    expect_string(__wrap_fim_db_get_path_range, top, "/boot0");
-    expect_value(__wrap_fim_db_get_path_range, storage, FIM_DB_DISK);
-    will_return(__wrap_fim_db_get_path_range, NULL);
-    will_return(__wrap_fim_db_get_path_range, FIMDB_OK);
+    expect_fim_db_get_path_from_pattern(syscheck.database, "/boot/%", NULL, FIM_DB_DISK, FIMDB_OK);
 
     expect_string(__wrap_realtime_adddir, dir, link_path);
     expect_value(__wrap_realtime_adddir, whodata, 0);
@@ -637,12 +632,7 @@ void test_fim_link_update_already_added(void **state) {
     int pos = 0;
     char *link_path = "/folder/test";
 
-    expect_value(__wrap_fim_db_get_path_range, fim_sql, syscheck.database);
-    expect_string(__wrap_fim_db_get_path_range, start, "/folder/test/");
-    expect_string(__wrap_fim_db_get_path_range, top, "/folder/test0");
-    expect_value(__wrap_fim_db_get_path_range, storage, FIM_DB_DISK);
-    will_return(__wrap_fim_db_get_path_range, NULL);
-    will_return(__wrap_fim_db_get_path_range, FIMDB_OK);
+    expect_fim_db_get_path_from_pattern(syscheck.database, "/folder/test/%", NULL, FIM_DB_DISK, FIMDB_OK);
 
     expect_string(__wrap__mdebug1, formatted_msg, "(6234): Directory '/folder/test' already monitored, ignoring link '(null)'");
 
@@ -661,12 +651,7 @@ void test_fim_link_check_delete(void **state) {
     will_return(__wrap_lstat, 0);
     will_return(__wrap_lstat, 0);
 
-    expect_value(__wrap_fim_db_get_path_range, fim_sql, syscheck.database);
-    expect_string(__wrap_fim_db_get_path_range, start, "/etc/");
-    expect_string(__wrap_fim_db_get_path_range, top, "/etc0");
-    expect_value(__wrap_fim_db_get_path_range, storage, FIM_DB_DISK);
-    will_return(__wrap_fim_db_get_path_range, NULL);
-    will_return(__wrap_fim_db_get_path_range, FIMDB_OK);
+    expect_fim_db_get_path_from_pattern(syscheck.database, "/etc/%", NULL, FIM_DB_DISK, FIMDB_OK);
 
     expect_string(__wrap_fim_configuration_directory, path, "/etc");
     expect_string(__wrap_fim_configuration_directory, entry, "file");
@@ -738,12 +723,8 @@ void test_fim_link_delete_range(void **state) {
 
     fim_tmp_file *tmp_file = *state;
 
-    expect_value(__wrap_fim_db_get_path_range, fim_sql, syscheck.database);
-    expect_string(__wrap_fim_db_get_path_range, start, "/media/");
-    expect_string(__wrap_fim_db_get_path_range, top, "/media0");
-    expect_value(__wrap_fim_db_get_path_range, storage, FIM_DB_DISK);
-    will_return(__wrap_fim_db_get_path_range, tmp_file);
-    will_return(__wrap_fim_db_get_path_range, FIMDB_OK);
+    expect_fim_db_get_path_from_pattern(syscheck.database, "/media/%", tmp_file, FIM_DB_DISK, FIMDB_OK);
+
 
     expect_value(__wrap_fim_db_delete_range, fim_sql, syscheck.database);
     expect_value(__wrap_fim_db_delete_range, storage, FIM_DB_DISK);
@@ -758,21 +739,15 @@ void test_fim_link_delete_range_error(void **state) {
 
     fim_tmp_file *tmp_file = *state;
 
-    expect_value(__wrap_fim_db_get_path_range, fim_sql, syscheck.database);
-    expect_string(__wrap_fim_db_get_path_range, start, "/media/");
-    expect_string(__wrap_fim_db_get_path_range, top, "/media0");
-    expect_value(__wrap_fim_db_get_path_range, storage, FIM_DB_DISK);
-    will_return(__wrap_fim_db_get_path_range, tmp_file);
-    will_return(__wrap_fim_db_get_path_range, FIMDB_ERR);
+    expect_fim_db_get_path_from_pattern(syscheck.database, "/media/%", tmp_file, FIM_DB_DISK, FIMDB_OK);
 
-    expect_string(__wrap__merror, formatted_msg, "(6708): Failed to delete a range of paths between '/media/' and '/media0'");
+    expect_string(__wrap__merror, formatted_msg, "(6708): Failed to delete a range of paths using pattern '/media/%'." );
 
     expect_value(__wrap_fim_db_delete_range, fim_sql, syscheck.database);
     expect_value(__wrap_fim_db_delete_range, storage, FIM_DB_DISK);
     expect_memory(__wrap_fim_db_delete_range, file, tmp_file, sizeof(tmp_file));
     will_return(__wrap_fim_db_delete_range, FIMDB_ERR);
 
-    expect_string(__wrap__merror, formatted_msg, "(6708): Failed to delete a range of paths between '/media/' and '/media0'");
 
     fim_link_delete_range(pos);
 }

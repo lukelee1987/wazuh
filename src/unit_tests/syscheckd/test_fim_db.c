@@ -1557,6 +1557,74 @@ void test_fim_db_get_path_range_success(void **state) {
     assert_int_equal(ret, FIMDB_OK);
 }
 
+
+/*----------------------------------------------*/
+/*----------fim_db_get_path_from_pattern------------------*/
+
+void test_fim_db_get_path_from_pattern_success(void **state) {
+    test_fim_db_insert_data *test_data = *state;
+    fim_tmp_file *file = NULL;
+
+    will_return(__wrap_os_random, 2345);
+
+#ifdef TEST_WINAGENT
+    expect_string(__wrap_fopen, path, "tmp/tmp_19283746523452345");
+#else
+    expect_string(__wrap_fopen, path, "/var/ossec/tmp/tmp_19283746523452345");
+#endif
+
+    expect_string(__wrap_fopen, mode, "w+");
+    will_return(__wrap_fopen, 1);
+
+    will_return_always(__wrap_sqlite3_reset, SQLITE_OK);
+    will_return_always(__wrap_sqlite3_clear_bindings, SQLITE_OK);
+    expect_any_always(__wrap_sqlite3_bind_text, pos);
+    expect_any_always(__wrap_sqlite3_bind_text, buffer);
+    will_return_always(__wrap_sqlite3_bind_text, 0);
+
+    will_return(__wrap_sqlite3_step, SQLITE_DONE);
+    wraps_fim_db_check_transaction();
+
+#ifndef TEST_WINAGENT
+    expect_string(__wrap_remove, filename, "/var/ossec/tmp/tmp_19283746523452345");
+#else
+    expect_string(__wrap_remove, filename, "tmp/tmp_19283746523452345");
+#endif
+
+    expect_value(__wrap_fclose, _File, 1);
+    will_return(__wrap_fclose, 1);
+    will_return(__wrap_remove, 0);
+
+    int ret = fim_db_get_path_from_pattern(test_data->fim_sql, "a/random/file/%", &file, syscheck.database_store);
+    assert_int_equal(ret, FIMDB_OK);
+}
+
+
+void test_fim_db_get_path_from_pattern_failed(void **state) {
+
+    test_fim_db_insert_data *test_data = *state;
+    fim_tmp_file *file = NULL;
+    char error_msg[OS_SIZE_128] = {0};
+#ifdef TEST_WINAGENT
+    char *path = "tmp/tmp_19283746523452345";
+#else
+    char *path = "/var/ossec/tmp/tmp_19283746523452345";
+#endif
+
+    snprintf(error_msg, OS_SIZE_128, "Failed to create temporal storage '%s': Success (0)", path);
+    expect_string(__wrap_fopen, mode, "w+");
+    will_return(__wrap_fopen, 0);
+
+    will_return(__wrap_os_random, 2345);
+
+    expect_string(__wrap_fopen, path, path);
+    expect_string(__wrap__merror, formatted_msg, error_msg);
+
+
+    int ret = fim_db_get_path_from_pattern(test_data->fim_sql, "a/random/file/%", &file, syscheck.database_store);
+    assert_int_equal(ret, FIMDB_ERR);
+}
+
 /*----------------------------------------------*/
 /*----------fim_db_get_not_scanned()------------------*/
 
@@ -2839,6 +2907,9 @@ int main(void) {
         // fim_db_get_path_range
         cmocka_unit_test_setup_teardown(test_fim_db_get_path_range_failed, test_fim_db_setup, test_fim_db_teardown),
         cmocka_unit_test_setup_teardown(test_fim_db_get_path_range_success, test_fim_db_setup, test_fim_db_teardown),
+        // fim_db_get_path_from_pattern
+        cmocka_unit_test_setup_teardown(test_fim_db_get_path_from_pattern_failed, test_fim_db_setup, test_fim_db_teardown),
+        cmocka_unit_test_setup_teardown(test_fim_db_get_path_from_pattern_success, test_fim_db_setup, test_fim_db_teardown),
         // fim_db_get_not_scanned
         cmocka_unit_test_setup_teardown(test_fim_db_get_not_scanned_failed, test_fim_db_setup, test_fim_db_teardown),
         cmocka_unit_test_setup_teardown(test_fim_db_get_not_scanned_success, test_fim_db_setup, test_fim_db_teardown),

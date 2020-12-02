@@ -82,7 +82,6 @@ int Read_Localfile(XML_NODE node, void *d1, __attribute__((unused)) void *d2)
     logf[pl].exists = 1;
     logf[pl].future = 1;
     logf[pl].reconnect_time = DEFAULT_EVENTCHANNEL_REC_TIME;
-    logf[pl].multiline = NULL;
 
     /* Search for entries related to files */
     i = 0;
@@ -309,7 +308,9 @@ int Read_Localfile(XML_NODE node, void *d1, __attribute__((unused)) void *d2)
             }
         } else if (strcasecmp(node[i]->element, xml_localfile_multiline_regex) == 0) {
 
-            if (!logf[pl].multiline) {
+            if (!strlen(node[i]->content)) {
+                mwarn("Empty tag '%s' is ignored", xml_localfile_multiline_regex);
+            } else if (!logf[pl].multiline) {
                 os_calloc(1, sizeof(w_multiline_config_t), logf[pl].multiline);
                 w_calloc_expression_t(&logf[pl].multiline->regex, EXP_TYPE_PCRE2);
 
@@ -325,7 +326,7 @@ int Read_Localfile(XML_NODE node, void *d1, __attribute__((unused)) void *d2)
                 logf[pl].multiline->timeout = w_get_attr_timeout(node[i]);
 
             } else {
-                mwarn("duplicate tag '%s' is ignored", xml_localfile_multiline_regex);
+                mwarn("Duplicate tag '%s' is ignored", xml_localfile_multiline_regex);
             }
 
         } else if (strcasecmp(node[i]->element, xml_localfile_exclude) == 0) {

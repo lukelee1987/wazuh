@@ -1348,9 +1348,9 @@ void test_free_win32rtfim_data_full_data(void **state) {
 
     data->h = (HANDLE)123456;
 
-    data->overlap.Pointer = calloc(1, sizeof(PVOID));
+    data->overlap.hEvent = calloc(1, sizeof(PVOID));
 
-    if(data->overlap.Pointer == NULL) {
+    if(data->overlap.hEvent == NULL) {
         free(data);
         fail();
     }
@@ -1358,7 +1358,7 @@ void test_free_win32rtfim_data_full_data(void **state) {
     data->dir = strdup("c:\\a\\path");
 
     if(data->dir == NULL) {
-        free(data->overlap.Pointer);
+        free(data->overlap.hEvent);
         free(data);
         fail();
     }

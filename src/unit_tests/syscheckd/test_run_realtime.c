@@ -1611,7 +1611,7 @@ void test_RTCallBack_acquired_changes_null_dir(void **state) {
     rt->dir = NULL;
     rt->watch_status = 1;
 
-    ov.Pointer = "C:\\a\\path";
+    ov.hEvent = "C:\\a\\path";
 
     // Begin calls to mock functions
 
@@ -1648,7 +1648,7 @@ void test_RTCallBack_acquired_changes(void **state) {
     rt->dir = strdup("C:\\a\\path");
     rt->watch_status = 1;
 
-    ov.Pointer = "C:\\a\\path\\file.test";
+    ov.hEvent = "C:\\a\\path\\file.test";
 
     // Begin calls to mock functions
 

@@ -1,0 +1,301 @@
+root@eta10:/var/log/kibana# head -n 300 kibana.log
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: server"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: csp"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: plugins"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: dev"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: server"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: csp"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: uiSettings"}
+{"type":"log","@timestamp":"2020-09-23T08:04:43Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: csp"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: server"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: plugins"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: dev"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: savedObjects"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: migrations"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: uiSettings"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: ops"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","root"],"pid":15354,"message":"setting up root"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","server"],"pid":15354,"message":"setting up server"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-service"],"pid":15354,"message":"Discovering plugins"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Discovering plugins..."}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Scanning \"/usr/share/kibana/src/plugins\" for plugin sub-directories..."}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Scanning \"/usr/share/kibana/x-pack/plugins\" for plugin sub-directories..."}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Scanning \"/usr/share/kibana/plugins\" for plugin sub-directories..."}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Scanning \"/usr/share/kibana-extra\" for plugin sub-directories..."}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"charts\" at \"/usr/share/kibana/src/plugins/charts\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"bfetch\" at \"/usr/share/kibana/src/plugins/bfetch\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"data\" at \"/usr/share/kibana/src/plugins/data\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"console\" at \"/usr/share/kibana/src/plugins/console\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"dashboard\" at \"/usr/share/kibana/src/plugins/dashboard\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["warning","plugins-discovery"],"pid":15354,"message":"Expect plugin \"id\" in camelCase, but found: apm_oss"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"apm_oss\" at \"/usr/share/kibana/src/plugins/apm_oss\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"advancedSettings\" at \"/usr/share/kibana/src/plugins/advanced_settings\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"discover\" at \"/usr/share/kibana/src/plugins/discover\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"devTools\" at \"/usr/share/kibana/src/plugins/dev_tools\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"embeddable\" at \"/usr/share/kibana/src/plugins/embeddable\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"expressions\" at \"/usr/share/kibana/src/plugins/expressions\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"esUiShared\" at \"/usr/share/kibana/src/plugins/es_ui_shared\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"inspector\" at \"/usr/share/kibana/src/plugins/inspector\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"kibanaLegacy\" at \"/usr/share/kibana/src/plugins/kibana_legacy\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"home\" at \"/usr/share/kibana/src/plugins/home\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"kibanaReact\" at \"/usr/share/kibana/src/plugins/kibana_react\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"kibanaUtils\" at \"/usr/share/kibana/src/plugins/kibana_utils\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"management\" at \"/usr/share/kibana/src/plugins/management\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"navigation\" at \"/usr/share/kibana/src/plugins/navigation\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"newsfeed\" at \"/usr/share/kibana/src/plugins/newsfeed\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"savedObjects\" at \"/usr/share/kibana/src/plugins/saved_objects\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"share\" at \"/usr/share/kibana/src/plugins/share\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"statusPage\" at \"/usr/share/kibana/src/plugins/status_page\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"telemetryCollectionManager\" at \"/usr/share/kibana/src/plugins/telemetry_collection_manager\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"timelion\" at \"/usr/share/kibana/src/plugins/timelion\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"telemetry\" at \"/usr/share/kibana/src/plugins/telemetry\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"uiActions\" at \"/usr/share/kibana/src/plugins/ui_actions\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"telemetryManagementSection\" at \"/usr/share/kibana/src/plugins/telemetry_management_section\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"visTypeVega\" at \"/usr/share/kibana/src/plugins/vis_type_vega\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"metrics\" at \"/usr/share/kibana/src/plugins/vis_type_timeseries\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"usageCollection\" at \"/usr/share/kibana/src/plugins/usage_collection\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"visualizations\" at \"/usr/share/kibana/src/plugins/visualizations\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"actions\" at \"/usr/share/kibana/x-pack/plugins/actions\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"alerting\" at \"/usr/share/kibana/x-pack/plugins/alerting\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"advancedUiActions\" at \"/usr/share/kibana/x-pack/plugins/advanced_ui_actions\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"canvas\" at \"/usr/share/kibana/x-pack/plugins/canvas\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"alertingBuiltins\" at \"/usr/share/kibana/x-pack/plugins/alerting_builtins\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"case\" at \"/usr/share/kibana/x-pack/plugins/case\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"cloud\" at \"/usr/share/kibana/x-pack/plugins/cloud\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"code\" at \"/usr/share/kibana/x-pack/plugins/code\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"consoleExtensions\" at \"/usr/share/kibana/x-pack/plugins/console_extensions\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"apm\" at \"/usr/share/kibana/x-pack/plugins/apm\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"dataEnhanced\" at \"/usr/share/kibana/x-pack/plugins/data_enhanced\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"encryptedSavedObjects\" at \"/usr/share/kibana/x-pack/plugins/encrypted_saved_objects\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"drilldowns\" at \"/usr/share/kibana/x-pack/plugins/drilldowns\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"graph\" at \"/usr/share/kibana/x-pack/plugins/graph\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["warning","plugins-discovery"],"pid":15354,"message":"Expect plugin \"id\" in camelCase, but found: file_upload"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"file_upload\" at \"/usr/share/kibana/x-pack/plugins/file_upload\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"features\" at \"/usr/share/kibana/x-pack/plugins/features\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"indexManagement\" at \"/usr/share/kibana/x-pack/plugins/index_management\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"eventLog\" at \"/usr/share/kibana/x-pack/plugins/event_log\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"infra\" at \"/usr/share/kibana/x-pack/plugins/infra\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: elasticsearch"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: path"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","plugins-discovery"],"pid":15354,"message":"Successfully discovered plugin \"licenseManagement\" at \"/usr/share/kibana/x-pack/plugins/license_management\""}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: console"}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana_legacy"}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: home"}
+{"type":"log","@timestamp":"2020-09-23T08:04:54Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: vis_type_vega"}
+{"type":"log","@timestamp":"2020-09-23T08:04:55Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: usageCollection"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: monitoring"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,licensing"}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,security"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana"}
+{"type":"log","@timestamp":"2020-09-23T08:04:51Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: apm_oss"}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","plugins","expressions"],"pid":15354,"message":"\"/usr/share/kibana/src/plugins/expressions/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:52Z","tags":["debug","plugins","share"],"pid":15354,"message":"\"/usr/share/kibana/src/plugins/share/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:04:53Z","tags":["debug","plugins","telemetryCollectionManager"],"pid":15354,"message":"\"/usr/share/kibana/src/plugins/telemetry_collection_manager/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:04:53Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: timelion"}
+{"type":"log","@timestamp":"2020-09-23T08:04:54Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: telemetry"}
+{"type":"log","@timestamp":"2020-09-23T08:04:54Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:54Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: metrics"}
+{"type":"log","@timestamp":"2020-09-23T08:04:55Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:04:55Z","tags":["debug","plugins","visualizations"],"pid":15354,"message":"\"/usr/share/kibana/src/plugins/visualizations/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:05Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,actions"}
+{"type":"log","@timestamp":"2020-09-23T08:05:06Z","tags":["debug","plugins","alerting"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/alerting/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","plugins","canvas"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/canvas/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,alerting_builtins"}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,case"}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,cloud"}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,code"}
+{"type":"log","@timestamp":"2020-09-23T08:05:08Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: console_extensions"}
+{"type":"log","@timestamp":"2020-09-23T08:05:09Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,apm"}
+{"type":"log","@timestamp":"2020-09-23T08:05:09Z","tags":["debug","plugins","dataEnhanced"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/data_enhanced/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:09Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,encryptedSavedObjects"}
+{"type":"log","@timestamp":"2020-09-23T08:05:10Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,graph"}
+{"type":"log","@timestamp":"2020-09-23T08:05:10Z","tags":["debug","plugins","file_upload"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/file_upload/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:10Z","tags":["debug","plugins","features"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/features/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:10Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,index_management"}
+{"type":"log","@timestamp":"2020-09-23T08:05:10Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,eventLog"}
+{"type":"log","@timestamp":"2020-09-23T08:05:12Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,infra"}
+{"type":"log","@timestamp":"2020-09-23T08:05:12Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,license_management"}
+{"type":"log","@timestamp":"2020-09-23T08:05:12Z","tags":["debug","plugins","lens"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/lens/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:13Z","tags":["debug","plugins","ml"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/ml/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","plugins","painlessLab"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/painless_lab/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","plugins","ossTelemetry"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/oss_telemetry/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,remote_clusters"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","plugins","rollup"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/rollup/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,siem"}
+{"type":"log","@timestamp":"2020-09-23T08:05:15Z","tags":["debug","plugins","searchprofiler"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/searchprofiler/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,spaces"}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: logging"}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,snapshot_restore"}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","plugins","transform"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/transform/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:16Z","tags":["debug","plugins","translations"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/translations/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:17Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,task_manager"}
+{"type":"log","@timestamp":"2020-09-23T08:05:17Z","tags":["debug","plugins","telemetryCollectionXpack"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/telemetry_collection_xpack/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:17Z","tags":["debug","plugins","uptime"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/uptime/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:17Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: xpack,upgrade_assistant"}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","plugins","watcher"],"pid":15354,"message":"\"/usr/share/kibana/x-pack/plugins/watcher/server\" does not export \"config\"."}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: console"}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: apm_oss"}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: kibana_legacy"}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: home"}
+{"type":"log","@timestamp":"2020-09-23T08:05:18Z","tags":["debug","config"],"pid":15354,"message":"Marking config path as handled: timelion"}
